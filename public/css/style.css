@@ -1,0 +1,619 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+ 
+header{
+  
+  width: 100%;
+}
+  .navbar-custom {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #000; /* Dark text color */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    padding: 0 20px; /* Padding for left and right spacing */
+    height: 70px; /* Increased height for navbar */
+    
+  }
+
+  .navbar-custom .navbar-brand, 
+  .navbar-custom .nav-link {
+    color: #000; /* Dark text color */
+  }
+
+  .navbar-custom .nav-link:hover,
+  .navbar-custom .dropdown-menu a:hover {
+    color: #007bff; /* Primary blue on hover */
+  }
+
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    border: none; /* Remove border from dropdown */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to dropdown */
+  }
+
+  .dropdown-menu a {
+    color: #000; /* Dark text color in dropdown */
+  }
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: -5px;
+  }
+
+ 
+  .dropdown-menu a:hover {
+    color: #007bff; /* Primary blue on hover in dropdown */
+    background-color: #e9ecef; /* Light background on hover */
+  }
+  .dropdown-menu a:hover {
+    color: #007bff; /* Primary blue on hover in dropdown */
+    background-color: #e9ecef; /* Light background on hover */
+  }
+
+  .btn-signup {
+    border: 1px solid #007bff; /* Blue border for sign-up button */
+    color: #007bff;
+  }
+
+  .btn-signup:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .hamburger-icon {
+    font-size: 40px;
+    cursor: pointer;
+    color: #000;
+    display: none;
+    position: fixed; /* Fix the icon at the top */
+    right: 0;
+    top: 14px;
+    z-index: 2;
+  }
+
+  .hamburger-icon:hover {
+    color: #555;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-width: 802px) {
+    .hamburger-icon {
+      display: block;
+    }
+
+    .navbar-custom .navbar-nav {
+      display: none;
+    }
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px
+    }
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+  .h{
+    padding: 0 100px 0 100px;
+  }
+  li{
+    margin-right:10px ;
+  }
+  /* Hide the dropdown menu by default */
+.dropdown-men {
+  display: none;
+  margin-top: 0; /* Ensure it appears directly below */
+  padding: 0;
+}
+
+/* Display dropdown menu on click */
+.dropdown-men.show {
+  display: block;
+}
+
+/* Style dropdown items */
+.dropdown-item {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Ensure no extra decoration for dropdown items */
+.dropdown-item:hover {
+  background-color: transparent;
+}
+.logo1{
+    height: 90px;
+    width:90px;
+    margin-top: -10px;
+}
+
+
+.modal-content {
+  background-color: #000 !important; /* Black background for modal */
+  color: white;
+  z-index: 1050; /* Bootstrap's default is 1050 */
+}
+.btn-primary {
+  background-color: #505ba0;
+  border-color: #505ba0;
+}
+
+.modal-footer a {
+  color: #505ba0;
+}
+.modal-footer a:hover {
+  color: #404a90;
+}
+
+
+/* know your answers ------------------------------------------------  */
+
+.accordion-item {
+  
+  margin: 5px 0;
+ text-decoration: none;
+ outline: none !important;
+  background-color: white;
+  margin-top: 10px;
+  border: none;
+  
+}
+
+
+.accordion-button {
+  width: 100%;
+  height:65px;
+ 
+  /* Removed the background color */
+  background-color: #f8f8fd !important ;
+  box-shadow: none !important;  /* You can also use other colors, like white */
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  border: none !important;
+  outline: none !important; /* Remove the default outline */
+  /* Remove any box-shadow if present */
+  border-radius: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color:#f8f8fd ;
+  border-radius: -16px;
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.accordion-button.active .arrow {
+  transform: rotate(-180deg);
+}
+
+
+/* ------------------------course realed doubts-------------------------------  */
+.accordion1-item {
+  
+  margin: 3px 0;
+ text-decoration: none;
+ outline: none !important;
+  /* background-color: white !important; */
+  
+  
+}
+
+
+.accordion1-button {
+  justify-content: center;
+  align-items: center;
+ width: 100%;
+  height:90px;
+  border: none !important;
+  /* Removed the background color */
+  background-color: white !important ;
+  box-shadow: none !important;  /* You can also use other colors, like white */
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  font-size: 20px;
+  
+  outline: none !important; /* Remove the default outline */
+  /* Remove any box-shadow if present */
+  
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion1-content {
+  display: none;
+  width: 85%;
+  padding: 10px;
+  background-color:white ;
+  
+}
+
+.arrow {
+  transition: transform 0.2s;
+}
+
+.accordion1-button.active .arrow {
+  transform: rotate(-180deg);
+}
+
+/* -------------------------ddelata vs sigma -------------------- */
+
+
+
+
+.fa-regular {
+  color: rgb(44, 14, 179); /* Optional: change the color of the checkmark */
+  margin-right: 8px; /* Space between the icon and the text */
+}
+.green {
+  color: green; /* Optional: change the color of the checkmark */
+  margin-right: 8px; /* Space between the icon and the text */
+}
+ul {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0; /* Remove left padding */
+}
+ul li {
+  margin-bottom: 10px; 
+}
+
+.div1{
+  height: 110px;
+  width: 220px;
+  background-color: orange;
+  border: 1px solid black;
+  border-radius: 0px 0px 100px 100px;
+  margin-top: -48px;
+}
+/* --
+/* --------------------------testinomial  ------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Slideshow container */
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Hide the slides by default */
+.mySlides1 {
+  display: none;
+}
+
+/* Testimonial container and items */
+.testimonial-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden; /* Hide overflowing testimonials */
+  width: 100%;
+}
+
+/* Individual testimonial styling */
+.testimonial {
+  background-color: rgba(255, 255, 255, 0.873); /* Dark background for contrast */
+  ; /* White text color */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 testimonials per row */
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image styling */
+.testimonial img {
+  /* width: 100%; */
+  height: 45%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Name and company styling */
+.testimonial h5 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.testimonial h6 {
+  font-weight: bold;
+  margin: 5px 0;
+  color: dark; /* Lighter color for company name */
+}
+
+/* Paragraph styling */
+.testimonial p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: black; /* Lighter color for paragraph */
+}
+
+/* Next & previous buttons */
+.prev1, .next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 30px;
+  margin-right:10px ;
+  color: rgb(47, 36, 189);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  text-decoration: none !important;
+  border-radius: 3px;
+  user-select: none;
+  outline: none;
+}
+
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* .prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade1 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .testo {
+      display:none;
+  }
+  
+
+}
+/* --------------------------------------------------------------------------------------------------------------------------- */
+/* small device testtonomisl */
+@media screen and (min-width: 768px) {
+  .testo2 {
+      display:none;
+  }
+  
+
+}
+
+.slideshow-container2 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+/* Hide the slides by default */
+.mySlides2 {
+  display: none;
+}
+
+/* Testimonial container and items */
+.testimonial-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  overflow: hidden; /* Hide overflowing testimonials */
+  width: 100%;
+}
+
+/* Individual testimonial styling */
+.testimonial2 {
+  background-color: rgba(255, 255, 255, 0.873); /* Dark background for contrast */
+  ; /* White text color */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  flex: 1 1 calc(33.333% - 20px); /* Adjust width for 3 testimonials per row */
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Image styling */
+.testimonial2 img {
+  /* width: 100%; */
+  height: 45%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  margin-bottom: 10px;
+}
+
+/* Name and company styling */
+.testimonial2 h5 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.testimonial2 h6 {
+  font-weight: bold;
+  margin: 5px 0;
+  color: dark; /* Lighter color for company name */
+}
+
+/* Paragraph styling */
+.testimonial2 p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: black; /* Lighter color for paragraph */
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 30px;
+  margin-right:10px ;
+  color: rgb(47, 36, 189);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  text-decoration: none !important;
+  border-radius: 3px;
+  user-select: none;
+  outline: none;
+}
+
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* .prev1:hover, .next1:hover {
+  background-color: rgba(0,0,0,0.8);
+} */
+
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade2 {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*   ---------------------flash message----------------------- */
+.flash-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+}
+.flash-success {
+  background-color: #28a745;
+}
+.flash-error {
+  background-color: #dc3545;
+}
+.flash-message .close-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  float: right;
+}
